@@ -5,15 +5,19 @@
  */
 package reina.GUI;
 
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author WINDOWS 10
  */
 public class TransaksiForm extends javax.swing.JFrame {
-
-    /**
-     * Creates new form TransaksiForm
-     */
+    private int id = 0; //variabel id untuk kode transaksi
+    private String code; //variabel kode untuk kode transaksi
+    private DefaultComboBoxModel cbModel; //jComboBox model
+    private DefaultTableModel tbModel; //jTable model
+    
     public TransaksiForm() {
         initComponents();
     }
@@ -27,8 +31,8 @@ public class TransaksiForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        code = new javax.swing.JLabel();
-        items = new javax.swing.JLabel();
+        codeLabel = new javax.swing.JLabel();
+        itemsLabel = new javax.swing.JLabel();
         codeText = new javax.swing.JTextField();
         itemsComboBox = new javax.swing.JComboBox<>();
         jumlahText = new javax.swing.JTextField();
@@ -42,9 +46,9 @@ public class TransaksiForm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        code.setText("Code");
+        codeLabel.setText("Code");
 
-        items.setText("Items");
+        itemsLabel.setText("Items");
 
         itemsComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Kopi", "Susu", "Gula" }));
         itemsComboBox.setSelectedIndex(-1);
@@ -88,13 +92,13 @@ public class TransaksiForm extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(code)
+                        .addComponent(codeLabel)
                         .addGap(18, 18, 18)
                         .addComponent(codeText, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                         .addComponent(newButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(items)
+                        .addComponent(itemsLabel)
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -118,14 +122,14 @@ public class TransaksiForm extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(code)
+                    .addComponent(codeLabel)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(codeText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(newButton)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(items)
+                        .addComponent(itemsLabel)
                         .addComponent(itemsComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(addButton)
@@ -182,10 +186,10 @@ public class TransaksiForm extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addButton;
     private javax.swing.JButton cancelButton;
-    private javax.swing.JLabel code;
+    private javax.swing.JLabel codeLabel;
     private javax.swing.JTextField codeText;
-    private javax.swing.JLabel items;
     private javax.swing.JComboBox<String> itemsComboBox;
+    private javax.swing.JLabel itemsLabel;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jumlahText;
     private javax.swing.JButton newButton;
