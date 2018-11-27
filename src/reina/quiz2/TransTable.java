@@ -12,12 +12,17 @@ import javax.swing.table.DefaultTableModel;
  * @author WINDOWS 10
  */
 public class TransTable extends DefaultTableModel{
-    private String[] columns; //variabel array bertipe String untuk menyimpan kolom nama
+    private String[] kolom; //variabel array bertipe String untuk menyimpan kolom nama
     
     //konstruktor
     public TransTable(){
-        this.columns = new String[]{
+        this.kolom = new String[]{
             "Nama", "Harga", "Jumlah"
         };
+    }
+    
+    //getter kolom
+    public String[] getKolomNama(){
+        return this.kolom;
     }
 }
