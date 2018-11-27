@@ -5,8 +5,12 @@
  */
 package reina.GUI;
 
+import java.util.ArrayList;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.table.DefaultTableModel;
+import reina.quiz2.Item;
+import reina.quiz2.TransCombo;
+import reina.quiz2.TransTable;
 
 /**
  *
@@ -17,8 +21,13 @@ public class TransaksiForm extends javax.swing.JFrame {
     private String code; //variabel kode untuk kode transaksi
     private DefaultComboBoxModel cbModel; //jComboBox model
     private DefaultTableModel tbModel; //jTable model
+    private ArrayList<Item> belanja = new ArrayList<>(); //variabel belanja untuk menyimpan item transaksi
     
     public TransaksiForm() {
+        TransCombo transCombo = new TransCombo();
+        this.cbModel = new DefaultComboBoxModel<>(transCombo.getNama().toArray()); //mengeset item combo
+        TransTable transTable = new TransTable();
+        this.tbModel = new DefaultTableModel(transTable.getKolomNama(), 0); //mengeset nama kolom table
         initComponents();
     }
 
