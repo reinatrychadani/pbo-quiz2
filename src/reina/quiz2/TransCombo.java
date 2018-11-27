@@ -5,6 +5,7 @@
  */
 package reina.quiz2;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -20,5 +21,11 @@ public class TransCombo {
         this.items.put("Susu", new Float(20000));
     }
     
-    
+    public ArrayList<String> getNama(){
+        ArrayList<String> string = new ArrayList<>();
+        for(String item : this.items.keySet()){
+            string.add(item);
+        }
+        return string;
+    }
 }
