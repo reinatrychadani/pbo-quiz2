@@ -28,4 +28,12 @@ public class TransCombo {
         }
         return string;
     }
+    
+    public ArrayList<Float> getPrices(){
+        ArrayList<Float> flt = new ArrayList<>();
+        for(float item : this.items.values()){
+            flt.add(item);
+        }
+        return flt;
+    }
 }
