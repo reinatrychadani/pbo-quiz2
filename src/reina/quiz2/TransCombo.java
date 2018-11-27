@@ -29,7 +29,7 @@ public class TransCombo {
         return string;
     }
     
-    public ArrayList<Float> getPrices(){
+    public ArrayList<Float> getHarga(){
         ArrayList<Float> flt = new ArrayList<>();
         for(float item : this.items.values()){
             flt.add(item);
@@ -37,5 +37,7 @@ public class TransCombo {
         return flt;
     }
     
-    
+    public void addItem(String nama, float harga){
+        this.items.put(nama, harga);
+    }
 }
