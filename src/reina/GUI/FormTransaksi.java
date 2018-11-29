@@ -319,11 +319,11 @@ public class FormTransaksi extends javax.swing.JFrame {
         int jumlah = new Integer (this.jumlahText.getText()) ;
         //mengecek apakah suatu barang ada yang double atau tidak
         if (isDuplicate(nama)) {
-            updateJumlah (nama , jumlah) ;
+            updateJumlah(nama, jumlah);
         } else {
-            tbModel.addRow(addItem(nama , jumlah));
+            tbModel.addRow(addItem(nama, jumlah)); 
         }
-        this.belanja () ;
+        this.belanja();
     }//GEN-LAST:event_addButtonActionPerformed
 
     private void newButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newButtonActionPerformed
