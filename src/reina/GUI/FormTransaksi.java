@@ -57,8 +57,8 @@ public class FormTransaksi extends javax.swing.JFrame {
     
     //menyimpan item nama, harga, dan jumlah
     private Object[] addItem (String nama , int jumlah) {
-        float harga = 0 ;
-        TransCombo items = new TransCombo() ;
+        float harga =0;
+         TransCombo items = new TransCombo() ;
         for (int i = 0; i < items.getNama().size(); i++) {
             if (nama.equalsIgnoreCase(items.getNama().get(i))) {
                 harga = items.getHarga().get(i) ;
