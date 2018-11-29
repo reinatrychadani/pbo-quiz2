@@ -103,7 +103,7 @@ public class FormTransaksi extends javax.swing.JFrame {
     
     //mengecek jika ada isi tabel yang kosong
     private boolean isEmpty() {
-        return this.tableTransaksi.getModel().getRowCount() <= 0 ;
+       return this.tableTransaksi.getModel().getRowCount() <= 0;
     }
     
     //mendisable tombol remove dan save jika ada isi tabel kosong yang kosong
