@@ -299,7 +299,7 @@ public class FormTransaksi extends javax.swing.JFrame {
         //mengecek apa ada baris yang dipilih
         if (tableTransaksi.getSelectedRow() <0) {
             //jika tidak ada , maka akan muncul pesan
-            String sbr = "Pilihlah item yang akan dihapus" ;
+            String sbr = "Pilihlah item yang akan dihapus";
             JOptionPane.showMessageDialog(this , sbr , "Information" , JOptionPane.INFORMATION_MESSAGE) ;  
         } else {
             //jika ternyata ada baris yg dipilih , maka baris tersebut akan dihapus
@@ -309,7 +309,7 @@ public class FormTransaksi extends javax.swing.JFrame {
             }
             
         }
-        this.belanja() ;
+        this.belanja();
     }//GEN-LAST:event_removeButtonActionPerformed
 
     private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
