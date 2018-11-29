@@ -52,7 +52,7 @@ public class FormTransaksi extends javax.swing.JFrame {
         this.incId();
         //untuk pemformatan tanggal
         String string = new SimpleDateFormat("yyMMdd").format(new Date());
-        this.code = String.format(string + "%02d", this.id);
+        this.code = String.format(string+"%02d", this.id);
         return code;
     }
     
