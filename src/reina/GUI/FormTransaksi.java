@@ -332,8 +332,8 @@ public class FormTransaksi extends javax.swing.JFrame {
         this.cancelButton.setEnabled (true) ;
         this.addButton.setEnabled (true) ;
         this.jumlahText.setEnabled (true) ;
-        this.itemsComboBox.setEnabled (true) ;
-        this.codeText.setText (this.setCode()) ;
+        this.itemsComboBox.setEnabled(true);
+        this.codeText.setText(this.setCode());
     }//GEN-LAST:event_newButtonActionPerformed
 
     /**
