@@ -276,11 +276,11 @@ public class FormTransaksi extends javax.swing.JFrame {
                 this.belanja.add (new Item(nama , harga , jumlah)) ;   
             }
             //instansiasi kelas Transaksi dengan kode dan menjalankan penyimpanan belanja
-            Transaksi tsk = new Transaksi (this.code , this.belanja) ;
+            Transaksi transaksi = new Transaksi(this.code, this.belanja);
             //Stringbuilder untuk menangani output Transaksi
             StringBuilder sbr = new StringBuilder() ;
             //menambahkan hasil transaksi
-            sbr.append(tsk.printDetail()) ;
+            sbr.append(transaksi.printDetail()) ;
             //memanggil dialog dengan StringBuilder
             JOptionPane.showMessageDialog(this , sbr , "Transaksi" , JOptionPane.INFORMATION_MESSAGE) ;
             //untuk melakukan transaksi baru
