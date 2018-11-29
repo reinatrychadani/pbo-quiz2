@@ -50,9 +50,8 @@ public class FormTransaksi extends javax.swing.JFrame {
     //set fungsi code
     private String setCode(){
         this.incId();
-        //untuk pemformatan tanggal
         String string = new SimpleDateFormat("yyMMdd").format(new Date());
-        this.code = String.format(string+"%02d", this.id);
+        this.code = String.format(string + "%o2d", this.id);
         return code;
     }
     
