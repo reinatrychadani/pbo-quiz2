@@ -41,6 +41,6 @@ public class Transaksi {
             string += "\t" + item.getNama() + "(x" + item.getJumlah() + ") : " + item.getTotal() + "\n";
         }
         string += "Total\t\t: "+ this.total;
-        return null;
+        return string;
     }
 }
