@@ -50,14 +50,15 @@ public class FormTransaksi extends javax.swing.JFrame {
     //set fungsi code
     private String setCode(){
         this.incId();
+        //untuk pemformatan tanggal
         String string = new SimpleDateFormat("yyMMdd").format(new Date());
-        this.code = String.format(string + "%o2d", this.id);
+        this.code = String.format(string + "%02d", this.id);
         return code;
     }
     
     //menyimpan item nama, harga, dan jumlah
     private Object[] addItem (String nama , int jumlah) {
-        float harga =0;
+        float harga = 0;
          TransCombo items = new TransCombo() ;
         for (int i = 0; i < items.getNama().size(); i++) {
             if (nama.equalsIgnoreCase(items.getNama().get(i))) {
